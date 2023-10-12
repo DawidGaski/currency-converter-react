@@ -1,0 +1,8 @@
+.container {
+    max-width: 800px;
+    min-height: 100vh;
+    background-image: url("../images/moneyTło.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+}
