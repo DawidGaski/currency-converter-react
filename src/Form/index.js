@@ -20,7 +20,7 @@ const Form = ({ calculateResult }) => {
                 <p>
                     <label className="form__label">
                         wybierz walutę:
-                        <select
+                        <select className="form__select"
                             onChange={(event) => setCurrency(event.target.value)}
                         >
                             {currencies.map((currency) => (

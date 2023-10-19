@@ -1,3 +1,7 @@
+.form {
+    max-width: 1000px;
+}
+
 .form__legend {
     color: rgb(0, 77, 77);
     font-size: 40px;
@@ -9,12 +13,26 @@
 
 }
 
-.form__input {
-    max-width: 350px;
+.form__select {
+    font-size: large;
+    max-width: 410px;
     width: 100%;
     border-radius: 5px;
     border: solid 1px rgb(19, 19, 19);
     padding: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.form__input {
+    font-size: large;
+    max-width: 345px;
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px rgb(19, 19, 19);
+    padding: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
 
 }
 
