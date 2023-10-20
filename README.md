@@ -1,6 +1,6 @@
 # Currency Calculator
 
-## description
+## Description
 
 simple currency converter app
 
@@ -10,7 +10,7 @@ simple currency converter app
 
 https://dawidgaski.github.io/currency-converter-react/
 
-## technologies
+## Technologies
 
 - HTML
 - CSS
