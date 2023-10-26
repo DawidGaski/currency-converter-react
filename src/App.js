@@ -5,6 +5,7 @@ import Section from "./Section";
 import Form from "./Form";
 import Result from "./Result";
 import currencies from "./currencies";
+import Clock from "./Clock";
 
 function App() {
   const [result, setResult] = useState(0);
@@ -24,6 +25,7 @@ function App() {
     <Container>
       <Header title={"Kalkulator USD, EUR, JPY"} />
       <Section>
+        <Clock />
         <Form calculateResult={calculateResult} />
         <Result result={result} />
       </Section>
