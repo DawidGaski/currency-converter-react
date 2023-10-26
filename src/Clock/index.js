@@ -9,10 +9,11 @@ const Clock = () => {
       weekday: "long",
       day: "numeric",
       month: "long",
+      year: "numeric",
     });
     const time = date.toLocaleTimeString();
 
-    return `${day}, ${time}`;
+    return `${day}, godzina: ${time}`;
   };
 
   useEffect(() => {
