@@ -1,5 +1,5 @@
 import "./style.css";
 
-const Section = (props) => <main className="section">{props.children}</main>;
+const Section = ({ children }) => <main className="section">{children}</main>;
 
 export default Section;
