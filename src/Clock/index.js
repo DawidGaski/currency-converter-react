@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import "./style.css";
+import React from "react";
+import { Timer } from "./styled";
 
 const Clock = () => {
   const [date, setDate] = useState(new Date());
@@ -27,9 +28,9 @@ const Clock = () => {
   }, []);
 
   return (
-    <div className="clock">
+    <Timer>
       <p>Dzisiaj jest {formatDate(date)}</p>
-    </div>
+    </Timer>
   );
 };
 
