@@ -1,10 +1,11 @@
-import "./style.css";
+import React from "react";
+import { Paragraph } from "./styled";
 
 const Result = ({ result }) => (
-  <p className="result">
+  <Paragraph>
     Kwota po przeliczeniu:{" "}
     <strong>{result ? result.resultElement.toFixed(2) : "0.00"} PLN</strong>
-  </p>
+  </Paragraph>
 );
 
 export default Result;
