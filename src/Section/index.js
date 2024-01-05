@@ -1,5 +1,6 @@
-import "./style.css";
+import React from "react";
+import { Segment } from "./styled";
 
-const Section = ({ children }) => <main className="section">{children}</main>;
+const Section = ({ children }) => <Segment>{children}</Segment>;
 
 export default Section;
