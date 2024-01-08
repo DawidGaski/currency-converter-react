@@ -1,35 +1,22 @@
-import { useState, useEffect } from "react";
-import React from "react";
 import { Timer } from "./styled";
+import { useCurrentDate } from "./useCurrentDate";
 
 const Clock = () => {
-  const [date, setDate] = useState(new Date());
-
-  const formatDate = (date) => {
-    const day = date.toLocaleDateString(undefined, {
-      weekday: "long",
-      day: "numeric",
-      month: "long",
-      year: "numeric",
-    });
-    const time = date.toLocaleTimeString();
-
-    return `${day}, godzina: ${time}`;
+  const formatDate = {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+    second: "numeric",
   };
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setDate(() => new Date());
-    }, 1000);
-
-    return () => {
-      clearInterval(intervalId);
-    };
-  }, []);
+  const date = useCurrentDate();
 
   return (
     <Timer>
-      <p>Dzisiaj jest {formatDate(date)}</p>
+      {" "}
+      Dzisiaj jest {date.toLocaleDateString(undefined, formatDate)}
     </Timer>
   );
 };
