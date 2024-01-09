@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Formation = styled.form`
+export const StyledForm = styled.form`
   max-width: 1000px;
 `;
 

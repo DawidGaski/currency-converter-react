@@ -1,8 +1,7 @@
 import currencies from "../currencies";
 import { useState } from "react";
-import React from "react";
 import {
-  Formation,
+  StyledForm,
   Legend,
   Label,
   Special,
@@ -21,7 +20,7 @@ const Form = ({ calculateResult }) => {
   };
 
   return (
-    <Formation onSubmit={onFormSubmit}>
+    <StyledForm onSubmit={onFormSubmit}>
       <fieldset>
         <Legend>Kalkulator walut</Legend>
         <p>
@@ -54,7 +53,7 @@ const Form = ({ calculateResult }) => {
           <Button>Przelicz</Button>
         </p>
       </fieldset>
-    </Formation>
+    </StyledForm>
   );
 };
 
