@@ -5,17 +5,17 @@ export const StyledForm = styled.form`
 `;
 
 export const Legend = styled.legend`
-  color: rgb(0, 77, 77);
+  color: ${({ theme }) => theme.color.SherpaBlue};
   font-size: 40px;
 `;
 
 export const Label = styled.label`
-  color: rgb(0, 77, 77);
+  color: ${({ theme }) => theme.color.SherpaBlue};
   font-size: 25px;
 `;
 
 export const Special = styled.span`
-  color: crimson;
+  color: ${({ theme }) => theme.color.Crimson};
 `;
 
 export const Select = styled.select`
@@ -23,7 +23,7 @@ export const Select = styled.select`
   max-width: 410px;
   width: 100%;
   border-radius: 5px;
-  border: solid 1px rgb(19, 19, 19);
+  border: solid 1px ${({ theme }) => theme.color.CodGrey};
   padding: 2px;
   margin-left: 5px;
   margin-right: 5px;
@@ -34,7 +34,7 @@ export const Input = styled.input`
   max-width: 345px;
   width: 100%;
   border-radius: 5px;
-  border: solid 1px rgb(19, 19, 19);
+  border: solid 1px ${({ theme }) => theme.color.CodGrey};
   padding: 2px;
   margin-left: 5px;
   margin-right: 5px;
@@ -43,12 +43,12 @@ export const Input = styled.input`
 export const Button = styled.button`
   padding: 10px;
   border-radius: 6px;
-  background-color: rgb(0, 77, 77);
-  color: whitesmoke;
+  background: ${({ theme }) => theme.color.Teal};
+  color: ${({ theme }) => theme.color.WhiteSmoke};
   font-size: 20px;
 
   &:hover {
-    background-color: rgb(0, 160, 160);
-    color: black;
+    background: ${({ theme }) => theme.color.PersianGreen};
+    color: ${({ theme }) => theme.color.Black};
   }
 `;
