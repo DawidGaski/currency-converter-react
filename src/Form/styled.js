@@ -52,3 +52,11 @@ export const Button = styled.button`
     color: ${({ theme }) => theme.color.Black};
   }
 `;
+
+export const Loading = styled.p`
+  color: ${({ theme }) => theme.color.Teal};
+`;
+
+export const Failure = styled.p`
+  color: ${({ theme }) => theme.color.Crimson};
+`;
