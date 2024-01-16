@@ -1,4 +1,4 @@
-import { Paragraph } from "./styled";
+import { Info, Paragraph } from "./styled";
 
 const Result = ({ result }) => {
   return (
@@ -8,12 +8,14 @@ const Result = ({ result }) => {
         {" "}
         {result !== undefined && (
           <>
-            {result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;={" "}
+            {result.sourceAmount.toFixed(2)}
+            {"PLN"}
             <strong>
-              {result.targetAmount && result.targetAmount.toFixed(2)}&nbsp;
+              {" = "}
+              {result.targetAmount.toFixed(2)}
               {result.currency}
             </strong>
-            <p>{result.date}</p>
+            <Info>Ostatnia aktualizacja kursów: {result.date}</Info>
           </>
         )}
       </strong>

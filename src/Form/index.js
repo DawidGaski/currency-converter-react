@@ -24,7 +24,7 @@ const Form = () => {
       sourceAmount: +amount,
       targetAmount: amount * rate,
       currency,
-      date: new Date(date).toLocaleString("pl-PL"),
+      date: new Date(date).toLocaleDateString("pl-PL"),
     });
   };
 

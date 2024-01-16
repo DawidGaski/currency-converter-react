@@ -12,7 +12,7 @@ export const Main = styled.main`
   justify-content: center;
   grid-template-columns: minmax(680px, auto);
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     grid-template-columns: auto;
   }
 `;
