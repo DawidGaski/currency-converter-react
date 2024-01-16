@@ -4,7 +4,7 @@
 
 simple currency converter app
 
-[![Animationcurrency.gif](https://i.postimg.cc/Hkk1Xs8M/Animationcurrency.gif)](https://postimg.cc/N5Snwt4G)
+[![Animationcurrency2react.gif](https://i.postimg.cc/Jnj0VTyF/Animationcurrency2react.gif)](https://postimg.cc/jwdty446)
 
 ## Demo
 
@@ -20,9 +20,13 @@ https://dawidgaski.github.io/currency-converter-react/
 - React JS
 - Create React App (Webpack, Babel, ESLint, PostCSS, CSS Loader & Style Loader)
 - Media Queries
-- Immutability 
+- Immutability
 - Controlled Components
-
+- Styled Components
+- Theme Provider
+- Custom Hooks
+- Axios
+- Async/await
 
 ## Available Scripts
 
