@@ -28,7 +28,7 @@ const Form = () => {
     });
   };
 
-  const [currency, setCurrency] = useState("");
+  const [currency, setCurrency] = useState("EUR");
   const [amount, setAmount] = useState("");
 
   const onFormSubmit = (event) => {
