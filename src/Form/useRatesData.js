@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getApi } from "./api";
+import { getCurrenciesDataFromApi } from "./api";
 
 export const useRatesData = () => {
   const [ratesData, setRatesData] = useState({
@@ -11,7 +11,7 @@ export const useRatesData = () => {
   useEffect(() => {
     const fetchRates = async () => {
       try {
-        const response = await getApi();
+        const response = await getCurrenciesDataFromApi();
         const { last_updated_at } = response.meta;
 
         setRatesData({
